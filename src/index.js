@@ -2,16 +2,11 @@ new Vue({
   el:"#app",
   data : {
     title :"Hello World I am here!!",
-    keepSync:false
+    link: "https://google.com"
   },
   methods:{
-    changeTitle : function(){
-      this.title = "Title has been changed";
-    },
-    KeeptextSync: function(event){
-      if(this.keepSync === true){
-        this.title = event.target.value;
-      }
+    sayHello : function(){
+     return "hello world!";
     }
   }
 });
