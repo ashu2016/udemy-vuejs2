@@ -12,13 +12,10 @@
 	<script src="src/index.js"></script>
 
 	<div id="app">
-		<p>Hello there. My name is {{ name}}. My age is {{age}}</p>
-		<p>
-			{{age + 3}}
-		</p>
-		<p>random number is that {{getRandomNum()}}</p>
+		
+		<p>Counter value is {{counter}}</p>
 
-		<input type="text" :placeholder="name">
+		<button @click="increment">Click me</button>
 	</div>
 
 

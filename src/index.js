@@ -1,13 +1,11 @@
 new Vue({
   el:"#app",
   data : {
-    name :"Ashutosh Kumar Singh",
-    age : 32,
-    link: "https://google.com"
+    counter :0
   },
   methods:{
-    getRandomNum : function(){
-      return Math.random();     
+    increment : function(){
+      this.counter++;     
     }
   }
 });
