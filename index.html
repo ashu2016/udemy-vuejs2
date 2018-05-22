@@ -12,11 +12,13 @@
 	<script src="src/index.js"></script>
 
 	<div id="app">
-		<h1 v-once>{{ title}}</h1>
+		<p>Hello there. My name is {{ name}}. My age is {{age}}</p>
 		<p>
-			{{ sayHello() }} - <a :href="link">Google</a>
+			{{age + 3}}
 		</p>
+		<p>random number is that {{getRandomNum()}}</p>
 
+		<input type="text" :placeholder="name">
 	</div>
 
 

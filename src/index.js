@@ -1,13 +1,13 @@
 new Vue({
   el:"#app",
   data : {
-    title :"Hello World I am here!!",
+    name :"Ashutosh Kumar Singh",
+    age : 32,
     link: "https://google.com"
   },
   methods:{
-    sayHello : function(){
-      this.title = 'Hello World';
-     return this.title;
+    getRandomNum : function(){
+      return Math.random();     
     }
   }
 });
