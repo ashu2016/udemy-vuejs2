@@ -17,7 +17,10 @@
 
 		<button @click="increment(2,$event)">Click me</button>
 
-		<p @mousemove="getCoordinates">getting coorrdinates using events : {{x}}/{{y}}</p>
+		<p @mousemove="getCoordinates">
+			coorrdinates : {{x}}/{{y}}
+			- <span @mousemove="dummy"> DEADSPOT</span>
+			</p>
 	</div>
 
 
