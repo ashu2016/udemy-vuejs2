@@ -1,16 +1,16 @@
 new Vue({
-  el:"#app",
-  data : {
-    counter :0,
-    x :0,
-    y:0
+  el: "#app",
+  data: {
+    counter: 0,
+    x: 0,
+    y: 0
   },
-  methods:{
-    increment : function(){
-      this.counter++;     
+  methods: {
+    increment: function(step, event) {
+      this.counter += step;
     },
-    getCoordinates : function(event){
-      this.x =  event.clientX;
+    getCoordinates: function(event) {
+      this.x = event.clientX;
       this.y = event.clientY;
     }
   }

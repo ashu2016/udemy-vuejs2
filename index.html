@@ -15,7 +15,7 @@
 		
 		<p>Counter value is {{counter}}</p>
 
-		<button @click="increment">Click me</button>
+		<button @click="increment(2,$event)">Click me</button>
 
 		<p @mousemove="getCoordinates">getting coorrdinates using events : {{x}}/{{y}}</p>
 	</div>
