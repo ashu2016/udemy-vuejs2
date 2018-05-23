@@ -1,7 +1,7 @@
 new Vue({
   el: "#app",
   data: {
-    textField: ''
+    textField: 'Ashu'
   },
   methods: {
     getText : function(event){

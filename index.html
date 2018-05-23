@@ -15,10 +15,9 @@
 		
 		
 
-		<button @click="showAlert()">Show Alert</button>
 
 		
-			<input type="text" @keydown="textField = $event.target.value">
+			<input type="text" v-model="textField">
 
 			<p>text value is :{{textField}}</p>
 	</div>
