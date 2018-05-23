@@ -13,16 +13,14 @@
 
 	<div id="app">
 		
-		<p>Counter value is {{counter}}</p>
+		
 
-		<button @click="increment(2,$event)">Click me</button>
+		<button @click="showAlert()">Show Alert</button>
 
-		<p @mousemove="getCoordinates">
-			coorrdinates : {{x}}/{{y}}
-			- <span @mousemove.stop=""> DEADSPOT</span>
-			</p>
+		
+			<input type="text" @keydown="textField = $event.target.value">
 
-			<input type="text" @keyup.enter="alertMe">
+			<p>text value is :{{textField}}</p>
 	</div>
 
 
