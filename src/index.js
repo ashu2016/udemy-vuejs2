@@ -12,6 +12,9 @@ new Vue({
     getCoordinates: function(event) {
       this.x = event.clientX;
       this.y = event.clientY;
+    },
+    alertMe : function(){
+      alert("Alert kar diya hai");
     }
   }
 });
