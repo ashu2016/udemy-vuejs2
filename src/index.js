@@ -1,15 +1,14 @@
 new Vue({
   el: "#app",
   data: {
-    textField: 'Ashu'
+    counter: 0,
+    result : ""
   },
   methods: {
-    getText : function(event){
+    increment : function(){
       
-      this.textField = event.target.value;
-    },    
-    showAlert : function(){
-      alert("Alert kar diya hai");
+      this.counter++;
+      this.result =  this.counter > 5 ? 'greater than 5' : 'smaller than 5';
     }
   }
 });
