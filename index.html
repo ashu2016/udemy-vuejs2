@@ -15,12 +15,15 @@
 		
 		
 
-		<button @click="increment">Increment</button>
-
+		<button @click="counter++">Increment</button>
+		<button @click="counter--">Decrement</button>
+		<button @click="secondCounter++">Increment Second Counter</button>
 		
 
 			<p>Counter : {{counter}}</p>
-			<p>Result : {{result}}</p>
+			<p>Second Counter : {{secondCounter}}</p>
+			<p>Result : {{result()}}</p>
+			<p>Output : {{output}}</p>
 	</div>
 
 
