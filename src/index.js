@@ -1,19 +1,21 @@
 new Vue({
   el: "#app",
   data: {
-    counter: 0     
+    counter: 0,
+    counter1 :0    
   }, 
   computed : {
-    output: function() {      
-      return this.counter > 5 ? 'greater than 5' : 'smaller than 5';
+    result: function() {      
+      return this.counter < 37 ? 'Not there yet' : 'Done';
     }
   },
   watch :{
-    counter: function(value){
+    result: function(value){
       var vm = this;
       setTimeout(function(){
-          vm.counter = 0;
-      },3000);
+          vm.result = 'Not there yet';
+          vm.counter =  0;
+      },5000);
     }
   }
 });
