@@ -9,7 +9,8 @@ new Vue({
     myStyle : function(){
       return {
         'background-color': this.color,
-        'width' : this.width
+        'width' : this.width,
+        'height' : this.width
       }
     }
   }
